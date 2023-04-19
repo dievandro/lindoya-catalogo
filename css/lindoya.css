@@ -1,0 +1,531 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+ul, ol, p{
+  margin:0;
+  padding:0;
+}
+.mobile{
+  display: none;
+}
+.desktop{
+  display: block;
+}
+body{
+  background-image: url('../assets/images/hero-bg-2.png');
+  background-repeat: repeat-x;
+  background-color: #F5F5F5;
+}
+.nav{
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between
+}
+.nav .nav__logo{
+  margin-left:10px;
+}
+.nav__redes{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  align-items: center;
+}
+.nav__redes a{
+  height: 30px;
+  font-weight: bold;
+  padding-top:10px;
+}
+
+.nav__menu{
+  display: flex;
+  align-items: center;
+}
+.nav__menu .nav__menu__link{
+  margin-left:20px;
+  margin-right: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #707070;
+  padding-top:20px;
+}
+.nav__menu .nav__menu__link--selected{
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #f18800;
+  text-align: center;
+  background-image: url('../assets/images/detail_link.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 20px;;
+}
+.nav .nav__mobile{
+  display: none;
+}
+.nav .nav__mobile__list{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: #FFF;
+  margin-top:80px;
+  text-align: center;
+  list-style: none;
+  background-image: url('../assets/images/background_top.png');
+  height: 0px;
+  overflow: hidden;
+  transition: .5s;
+}
+.nav .nav__mobile__list li a{
+  line-height: 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#f18800
+}
+.nav .nav__mobile__list__open{
+  height: 280px;
+  transition: .5s;
+}
+@media screen and (max-width: 1000px) {
+  .nav .nav__redes{
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav .nav__menu{
+    display: none;
+  }
+  .nav .nav__mobile{
+    display: block;
+    margin-right: 20px;;
+    margin-top:10px;
+    cursor: pointer;
+  }
+}
+
+
+.footer{
+  background-image: url('../assets/images/rodape.svg');
+  height:400px;
+  padding-top:250px;
+  margin-top:-190px;
+  position: absolute;
+  width: 100%;
+}
+.footer__networks{
+  text-align: right;
+}
+.footer__networks .footer__networks__list{
+  display: flex;
+  list-style: none;
+  padding:0;
+  justify-content: flex-end;
+}
+.footer__networks .footer__networks__title{
+  color:#FFF;
+}
+.footer__networks .footer__networks__list li{
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding:6px;
+  background-color: #FFF;
+  margin-left:2px;
+  margin-right: 2px;;
+  border-radius: 5px;;
+  
+
+}
+.footer__networks .footer__networks__list li a{
+  width: 50px;
+  height: 50px;
+}
+.footer .footer__links{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer .footer__links li a{
+  color:#FFF !important;
+  text-decoration:  none;
+  margin-right: 30px;
+}
+.footer .footer__links li a:hover{
+  text-decoration: underline;
+}
+
+
+.banner{
+  text-align: center;
+  margin-top:100px;
+  
+}
+.banner img{
+  margin: auto;
+  margin-top:-50px;
+}
+.tradicional{
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+.sense{
+  background-image: url('../assets/images/sense-circle.png');
+  background-repeat: no-repeat;
+  background-position: right 10px;
+  background-size: 14vw;
+}
+.sense img{
+  
+}
+
+.fitness{
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.speciali{
+  background-image: url('../assets/images/speciali-detail.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 12vw;
+}
+
+.kids{
+  text-align: center;
+}
+
+.rosa{
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.big{
+  background-image: url('../assets/images/big-detail.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto;
+  background-size: 11vw;
+  margin-bottom: 100px;
+}
+
+.thermal{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.thermal img{
+  width: 100%;
+}
+.galao img{
+  text-align: center;
+  width: 100%;
+}
+
+.last{
+  height:1400px;
+  background-image: url('../assets/images/last-background.png');
+  background-repeat: no-repeat;
+  background-color: #F6F6F5;
+  background-size: 100%;
+}
+.last img{
+  width: 100%;
+}
+.last .last__content{
+  display: flex;
+  padding-top:300px;
+}
+.last .last__content .last__content__logo{
+  width: 50%;
+  padding:100px;
+}
+.last .last__content .last__content__description{
+  padding-bottom:400px;
+  color:#707070;
+  font-weight: 400;
+  font-size:12pt;
+  max-width: 500px;
+  text-align: justify;
+  margin-top:130px;
+  @media screen and (max-width: 800px) {
+    margin-top:0px !important;
+  }
+}
+
+.last .last__content .last__content__description strong{
+  color:#002D73;
+}
+
+.catalog-water{
+  width: 100%;
+}
+.catalog-water .catalog-water__list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  overflow: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0;
+}
+.catalog-water .catalog-water__list--item--base-image{
+  height:230px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+}
+.catalog-water .catalog-water__list--item--base-image img{
+  width: auto;
+}
+.catalog-water .catalog-water__list--item{
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.catalog-water .catalog-water__list--item h4{
+  font-weight: bold;
+  text-align: left;
+  color: #ef7d00;
+  font-size:14px;
+  text-align: center;
+}
+.catalog-water .catalog-water__list--item p{
+  font-weight: 200;
+  font-size: 14px;
+  text-align: left;
+  color: #707070;
+  font-size:12px;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.catalog-water .catalog-water__list--item--01 img{
+  height: 200px;
+}
+.catalog-water .catalog-water__list--item--02 img{
+  height: 230px;
+}
+.catalog-water .catalog-water__list--item--03 img{
+  height: 280px;
+}
+.catalog-water .catalog-water__list--item--04 img{
+  height: 250px;
+}
+.catalog-water .catalog-water__list--item--05 img{
+  height: 150px;
+}
+
+.catalog-water .catalog-water__list--item--sense--01 img{
+  height: 130px;
+}
+.catalog-water .catalog-water__list--item--sense--02 img{
+  height: 150px;
+}
+.catalog-water .catalog-water__list--item--sense--03 img{
+  height: 190px;
+}
+.catalog-water .catalog-water__list--item--sense--04 img{
+  height: 220px;
+}
+.catalog-water .catalog-water__list--item--sense--05 img{
+  height: 220px;
+}
+.catalog-water .catalog-water__list--item--sense--06 img{
+  height: 220px;
+}
+
+.catalog-water .catalog-water__list--item--speciali--01 img{
+  height: 190px;
+}
+.catalog-water .catalog-water__list--item--speciali--02 img{
+  height: 220px;
+}
+.catalog-water .catalog-water__list--item--speciali--03 img{
+  height: 280px;
+}
+.catalog-water .catalog-water__list--item--speciali--04 img{
+  height: 280px;
+}
+.catalog-water .catalog-water__list--item--speciali--05 img{
+  height: 200px;
+}
+.catalog-water .catalog-water__list--item--speciali--06 img{
+  height: 200px;
+}
+
+
+.catalog-water .catalog-water__list--item--big--01 img{
+  height: 290px;
+}
+.catalog-water .catalog-water__list--item--big--02 img{
+  height: 290px;
+}
+.catalog-water .catalog-water__list--item--big--03 img{
+  height: 290px;
+}
+.catalog-water .catalog-water__list--item--big--04 img{
+  height: 290px;
+}
+.catalog-water .catalog-water__list--item--big--05 img{
+  height: 290px;
+}
+.catalog-water .catalog-water__list--item--big--06 img{
+  height: 290px;
+}
+
+.catalog-water .catalog-water__list--item--thernal--01 img{
+  height: 290px;
+}
+.catalog-water .catalog-water__list--item--thernal--02 img{
+  height: 240px;
+}
+
+
+.catalog-water .catalog-water__list--item--suporte--01{
+  margin-left:20px;
+  margin-right: 20px;
+  
+}
+.catalog-water .catalog-water__list--item--suporte--01 h4{
+  text-align: center !important;
+}
+.catalog-water .catalog-water__list--item--suporte--02 h4{
+  text-align: center !important;
+}
+.catalog-water .catalog-water__list--item--suporte--03 h4{
+  text-align: center !important;
+}
+.catalog-water .catalog-water__list--item--suporte--01 img{
+  height: 220px;
+}
+.catalog-water .catalog-water__list--item--suporte--02{
+  margin-left:20px;
+  margin-right: 20px;
+}
+.catalog-water .catalog-water__list--item--suporte--02 img{
+  height: 220px;
+}
+.catalog-water .catalog-water__list--item--suporte--03{
+  margin-left:20px;
+  margin-right: 20px;
+}
+.catalog-water .catalog-water__list--item--suporte--03 img{
+  height: 220px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+  .sense{
+    background-image: none;
+  }
+
+  .kids img{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .fitness img{
+    width: 100% ;
+  }
+  .rosa img{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .last .last__content{
+    padding: 0;
+    flex-direction: column;
+  }
+  .last .last__content .last__content__logo {
+    width: 100%;
+    padding: 100px;
+    padding-top: 160px;
+  }
+  .last .last__content__description{
+    padding:30px;
+  }
+  .last{
+    height:1700px;
+    background-image: url('../assets/images/detail-last.png');
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+    
+    background-size: 100%;
+  }
+  .last_background{
+    background-image: url('../assets/images/background-last.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .footer{
+    padding-top: 70px !important;
+    height:500px !important;
+  }
+  .footer__links{
+    flex-direction: column !important;
+    margin-top:10px !important;
+  }
+  .footer__links li{
+    border-bottom: 1px solid #33537F;
+    line-height: 70px;
+    text-align: center;
+  }
+  .footer__networks{
+    margin-top:30px;
+    text-align: center;
+  }
+  .footer__networks__list{
+    justify-content: center !important
+  }
+  .footer__networks__title{
+    text-align: center;
+  }
+  .footer .footer__links li a{
+    color:#FFF !important;
+    text-decoration:  none;
+    margin-right: 0px !important;
+  }
+
+  .catalog-water .container{
+    padding: 0 !important;
+  }
+  .catalog-water__list--item--thernal--00{
+    display: block !important;
+  }
+  .catalog-water__list--item--suporte--00{
+    display: block !important;
+  }
+}
+.catalog-water .container{
+  padding: 0 !important;
+  max-width: 100%;
+}
+.catalog-water__list--item--thernal--00{
+  display: none ;
+}
+.catalog-water__list--item--suporte--00{
+  display: none;
+}
